@@ -17,7 +17,7 @@ Document the concrete behavior and test evidence. An offline test is not evidenc
 
 ## Documentation
 
-Use the [documentation plan](docs/documentation-plan.md) and [Diátaxis](https://diataxis.fr/). Put a guided first experience in tutorials, goal-specific procedures in how-to guides, exact options/fields in reference, and tradeoffs in explanation. Keep the README as the project entry point. Check code examples against CLI help and update the English and Estonian starting tutorials when their commands change.
+Use the [documentation plan](docs/documentation-plan.md) and [Diátaxis](https://diataxis.fr/). Put a guided first experience in tutorials, goal-specific procedures in how-to guides, exact options/fields in reference, and tradeoffs in explanation. Keep the README as the project entry point. Check code examples against CLI help and update the starting tutorial when its commands change.
 
 For volatile Meta UI steps, link the official source and record the check date. Avoid asserting that an in-game menu or setting exists based only on a JSON field.
 

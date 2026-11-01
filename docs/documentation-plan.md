@@ -15,8 +15,8 @@ Eleven Trainer serves Quest owners who want repeatable ball-machine practice and
 
 ## Navigation and delivery
 
-`README.md` is the project front door. `docs/index.md` routes by reader need into `tutorials/`, `how-to/`, `reference/`, and `explanation/`. An Estonian start page links to the same maintained reference rather than duplicating every command.
+`README.md` is the project front door. `docs/index.md` routes by reader need into `tutorials/`, `how-to/`, `reference/`, and `explanation/`. All documentation is maintained in English.
 
-Distribution: one deliberate end-to-end tutorial in English and Estonian, three task guides, two references, two explanations. Wave 1 supports a complete USB workflow; wave 2 adds wireless operation and contributor detail. Both waves are in the initial release scope.
+Distribution: one deliberate end-to-end tutorial, three task guides, two references, two explanations. Wave 1 supports a complete USB workflow; wave 2 adds wireless operation and contributor detail. Both waves are in the initial release scope.
 
 Open verification items: confirm current Meta UI against official documentation; distinguish historical device observations from testing of this new package; never imply that file readback proves ball trajectories or loop timing. The new package needs a later hardware acceptance test. No additional audience or product-scope decision is required before writing.

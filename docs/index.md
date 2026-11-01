@@ -5,7 +5,6 @@ Choose the section that matches what you need now. This separation follows [Diá
 ## Tutorials — learn by doing
 
 - [Your first training session](tutorials/first-training.md): from developer account and USB authorization to one shot repeated in the game.
-- [Eestikeelne alustamine](et/alustamine.md): sama esimene teekond eesti keeles.
 
 ## How-to guides — complete a task
 

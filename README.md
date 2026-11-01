@@ -18,7 +18,6 @@ Eleven Trainer is a local Python command-line tool, released under the [MIT lice
 | “Something failed; I want my previous settings back.” | [Recover and troubleshoot](docs/how-to/recover.md) |
 | “What does this command or JSON field mean?” | [CLI reference](docs/reference/cli.md) · [Settings reference](docs/reference/settings.md) |
 | “Why build this, and why these design choices?” | [Rationale](docs/explanation/rationale.md) |
-| “Alustame eesti keeles.” | [Eestikeelne alustamisjuhend](docs/et/alustamine.md) |
 
 The [documentation](docs/index.md) follows [Diátaxis](https://diataxis.fr/): learning tutorials, task-oriented how-to guides, factual reference, and explanation each have their own place.
 

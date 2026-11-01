@@ -40,7 +40,7 @@ Failures after an attempted replacement trigger a restore attempt using `origina
 | Area | Evidence / status |
 |---|---|
 | Original personal workflow | Windows, Quest 3; observed Eleven version `0.436.37_2026.9.4.18.35.33.415` |
-| New package | Offline unit/CLI tests and fake-device transactions; no completed hardware acceptance test yet |
+| New package | Offline tests pass; experimental R01 transferred and persisted on Quest 3, but user reported launcher above the table on 2026-11-01. Native position mapping failed the game test; older settings were restored. |
 | JSON import/build | Tested against synthetic fixtures and local exports from the original workflow; private exports are not bundled |
 | File order | Python preserves insertion order; whether every future game build executes it identically needs hardware verification |
 | End-of-list loop, phase timing, trajectory | Must be observed in Ball Machine; readback does not prove them |

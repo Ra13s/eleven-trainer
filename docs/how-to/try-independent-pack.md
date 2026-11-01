@@ -1,5 +1,7 @@
 # Try the complete independent pack
 
+**Known hardware failure, reported 2026-11-01:** the default v0.2.0 mapping placed the launcher above the table on Quest 3. The installation/readback succeeded, but the in-game position was wrong. The older training pack was restored. The instructions below document the experiment; its default mapping needs correction before another practice test.
+
 This download includes **42 preset files**: 12 individual feeds and two 10/2 cycles, each at three launch cadences. The files are already generated. You do not need to export or build a source pack first. Set up developer mode and ADB using [the first-training tutorial](../tutorials/first-training.md) if needed.
 
 These are experimental feeds derived from a declared ballistic model. Native coordinates and spin mappings still need in-game calibration. They are not the older community-derived library and are not legal two-bounce serves. Read the [model and limits](../explanation/independent-model.md) for the derivation.

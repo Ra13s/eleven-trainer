@@ -6,6 +6,8 @@ Choose a single serve, work through a sequence, or build a complete **10/2 cycle
 
 The bundled independent pack contains **12 feeds, 2 cycles and 3 tempos: 42 ready-to-transfer JSON presets**. The full `R01` cycle has 144 active rows in 10/2 order. These new trajectories are experimental and need calibration in the game; they are not the older imported training library.
 
+**Hardware test finding (2026-11-01): the default independent pack placed the launcher above the table on Quest 3.** Transfer and readback succeeded, but the native position mapping did not pass the in-game test. The original training settings were restored. Calibrate the mapping before using this experimental pack for practice; the JSON/schema checks do not establish correct placement.
+
 Eleven Trainer is a local Python command-line tool, released under the [MIT license](LICENSE). No subscription, AI API key, or cloud account is required by the tool. Quest setup still requires a Meta account and developer access.
 
 **Status: early alpha.** This package was extracted from a personal Windows/Quest 3 workflow and redesigned for reuse. The new package has automated offline tests; it has **not yet completed a hardware acceptance test**. The game's settings format is unofficial and can change. See [compatibility and evidence](docs/reference/settings.md#compatibility-and-evidence).

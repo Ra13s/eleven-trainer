@@ -60,7 +60,7 @@ python -m venv .venv
 .venv\Scripts\python -m eleven_trainer --version
 ```
 
-The version should be `0.1.0`. If `python` is missing, install it from [python.org](https://www.python.org/downloads/windows/) and reopen Command Prompt. Repeat the `PATH` and `QUEST_SERIAL` commands if you opened a new window.
+The version should be `0.2.0`. If `python` is missing, install it from [python.org](https://www.python.org/downloads/windows/) and reopen Command Prompt. Repeat the `PATH` and `QUEST_SERIAL` commands if you opened a new window.
 
 ## 5. Export and inspect your shots
 

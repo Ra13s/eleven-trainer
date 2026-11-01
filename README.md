@@ -1,8 +1,10 @@
 # Eleven Trainer
 
-**Turn your Eleven Table Tennis ball-machine shots into repeatable practice sessions.**
+**A complete experimental training pack and session builder for Eleven Table Tennis on Quest.**
 
 Choose a single serve, work through a sequence, or build a complete **10/2 cycle**: ten repetitions of each selected shot, then two of each in the same order. Set the launch interval to suit your pace. Transfer the result to a Meta Quest with ADB, with a local backup and file verification.
+
+The bundled independent pack contains **12 feeds, 2 cycles and 3 tempos: 42 ready-to-transfer JSON presets**. The full `R01` cycle has 144 active rows in 10/2 order. These new trajectories are experimental and need calibration in the game; they are not the older imported training library.
 
 Eleven Trainer is a local Python command-line tool, released under the [MIT license](LICENSE). No subscription, AI API key, or cloud account is required by the tool. Quest setup still requires a Meta account and developer access.
 
@@ -13,6 +15,7 @@ Eleven Trainer is a local Python command-line tool, released under the [MIT lice
 | What you need | Read this |
 |---|---|
 | “I'm new. Take me from developer mode to my first session.” | [First training tutorial](docs/tutorials/first-training.md) |
+| “I want the complete included pack, with 10/2 order.” | [Try the independent pack](docs/how-to/try-independent-pack.md) |
 | “I want one serve, a full cycle, or a different pace.” | [Create a session](docs/how-to/create-session.md) |
 | “I want to unplug the USB cable.” | [Connect over Wi-Fi](docs/how-to/wifi.md) |
 | “Something failed; I want my previous settings back.” | [Recover and troubleshoot](docs/how-to/recover.md) |
@@ -23,6 +26,7 @@ The [documentation](docs/index.md) follows [Diátaxis](https://diataxis.fr/): le
 
 ## What it does
 
+- Includes independently derived experimental feeds, individual launchers and complete 10/2 cycles in three tempos.
 - Imports the settings file from your own headset, or reads an existing local export.
 - Lists shot IDs and names so you can choose precisely what to practice.
 - Builds one-shot sessions and ordered repetition phases, preserving repeated selections.
@@ -53,7 +57,16 @@ On Windows, install into that environment without activating it:
 
 On macOS/Linux, use `.venv/bin/python` instead. The commands below use `python` as shorthand for the chosen environment's interpreter. Running `python -m eleven_trainer` directly from the repository also works without installation; the runtime uses only Python's standard library.
 
-With your own exported settings at `.local/source.json`:
+To try the included full pack, replace `YOUR_SERIAL` with your connected Quest's serial:
+
+```console
+python -m eleven_trainer trial R01 --preview
+python -m eleven_trainer trial R01 --device YOUR_SERIAL
+```
+
+Or open the Windows menu with `TRIALS.cmd --device YOUR_SERIAL`. See [all presets, tempos and restore instructions](docs/how-to/try-independent-pack.md).
+
+To build a different session from your own exported settings at `.local/source.json`:
 
 ```console
 python -m eleven_trainer list .local/source.json
@@ -61,7 +74,7 @@ python -m eleven_trainer build .local/source.json .local/cycle.json --phases 10 
 python -m eleven_trainer validate .local/cycle.json
 ```
 
-This uses all active source rows in file order. For a beginner, start with **one known comfortable shot**; follow the [tutorial](docs/tutorials/first-training.md) for selection, headset setup and installation. No playable drill pack is bundled: use your own saved shots. [Why packs are separate](docs/explanation/sources.md).
+This uses all active source rows in file order. For an already calibrated starting point, use **one known comfortable shot** from your own game; follow the [tutorial](docs/tutorials/first-training.md) for export, selection and installation. The bundled independent pack is a separate experimental path. [Source provenance](docs/explanation/sources.md).
 
 ## Development
 
@@ -74,6 +87,6 @@ Tests cover ordering, source preservation, malformed input, local preflight, and
 
 ## License and relationship to Eleven
 
-Original code and documentation in this repository are MIT licensed. Imported game settings and community drill packs retain their own ownership and terms; this license does not relicense them. The project includes no game binaries, ADB binaries, personal backups or private device identifiers.
+Original code, documentation and independently generated experimental presets in this repository are MIT licensed. Imported game settings and community drill packs retain their own ownership and terms; this license does not relicense them. The project includes no game binaries, ADB binaries, personal backups or private device identifiers.
 
 Eleven Trainer is an independent community project, not affiliated with or endorsed by For Fun Labs or Meta. Eleven Table Tennis and Meta Quest names identify the products it works with.

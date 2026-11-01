@@ -13,10 +13,14 @@ Eleven Trainer serves Quest owners who want repeatable ball-machine practice and
 | Why this tool, `explanation/rationale.md` | Explanation | Player/contributor: understand design choices | Repetition progression, preserved trajectories, local architecture, restart tradeoffs, AI boundaries | None | 1 | Stable: records motivations and alternatives |
 | Licensing and sources, `explanation/sources.md` | Explanation | Contributor: understand why drill packs are excluded | Own code vs third-party data, attribution, provenance | None | 2 | Medium: permissions may change; prevents confusing free download with open licensing |
 
+## Independent pack addition
+
+The second release adds `how-to/try-independent-pack.md` for players installing the complete bundled 10/2 pack (wave 2, volatile with calibration), and `explanation/independent-model.md` for contributors understanding the derivation and limits (wave 2, changes with the model). The former depends on device setup and CLI reference; the latter documents assumptions without mixing them into installation steps.
+
 ## Navigation and delivery
 
 `README.md` is the project front door. `docs/index.md` routes by reader need into `tutorials/`, `how-to/`, `reference/`, and `explanation/`. All documentation is maintained in English.
 
-Distribution: one deliberate end-to-end tutorial, three task guides, two references, two explanations. Wave 1 supports a complete USB workflow; wave 2 adds wireless operation and contributor detail. Both waves are in the initial release scope.
+Distribution: one deliberate end-to-end tutorial, four task guides, two references, three explanations. Wave 1 supports a complete USB workflow; wave 2 adds wireless operation and contributor detail. Both waves are in the initial release scope.
 
 Open verification items: confirm current Meta UI against official documentation; distinguish historical device observations from testing of this new package; never imply that file readback proves ball trajectories or loop timing. The new package needs a later hardware acceptance test. No additional audience or product-scope decision is required before writing.

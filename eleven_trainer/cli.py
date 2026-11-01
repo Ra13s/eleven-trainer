@@ -23,6 +23,15 @@ def parser():
     command.add_argument("--shots", nargs="+", help="Shot IDs in desired order; repeats are retained. Default: active rows.")
     command.add_argument("--phases", nargs="+", type=int, default=[10, 2])
     command.add_argument("--interval", type=float, help="Seconds between launches; does not change ball speed.")
+    command = commands.add_parser("trial", help="Choose an independently derived experimental training preset")
+    command.add_argument("id", nargs="?", help="I01..I12, N01 or R01; omit for a selection menu")
+    command.add_argument("--preview", action="store_true", help="Inspect without contacting a device")
+    command.add_argument("--pace", choices=['slow', 'normal', 'fast'], help="Launch cadence; default slow (3 seconds)")
+    command.add_argument("--output", type=Path, help="Export the selected preset without contacting a device")
+    command.add_argument("--device", help="Exact USB serial or connected IP:port; required to install")
+    command.add_argument("--adb", default="adb")
+    command.add_argument("--adb-port", type=int, default=5037)
+    command.add_argument("--backup-dir", type=Path, default=Path('.local/backups'))
     for name in ("devices", "pull", "install"):
         command = commands.add_parser(name)
         command.add_argument("--adb", default="adb", help="ADB executable path")
@@ -41,7 +50,10 @@ def parser():
 def main(argv=None):
     args = parser().parse_args(argv)
     try:
-        if args.command == "list":
+        if args.command == "trial":
+            from .trials import run
+            return run(args)
+        elif args.command == "list":
             for key, row in load(args.source)["shots"]["data"].items():
                 print(f"{key}\tactive={row['isActive']}\t{row['DataName']}")
         elif args.command == "validate":
@@ -74,6 +86,8 @@ def main(argv=None):
     except AdbError as exc:
         print(f"Device operation failed: {exc}", file=sys.stderr)
         return 3
+    except (EOFError, KeyboardInterrupt):
+        return 130
     except (OSError, ValueError) as exc:
         print(f"Local file or settings error: {exc}", file=sys.stderr)
         return 2

@@ -1,0 +1,1082 @@
+{
+  "status": "UNCONFIRMED GAME MAPPING; ANALYTIC MODEL CHECKED ONLY",
+  "provenance": "Derived from declared geometry, gravity, new target/apex/spin-ratio choices and supplied schema. No preset source was read.",
+  "canonical_coordinates": {
+    "units": "metres and seconds",
+    "origin": "floor directly below table-center/net-center",
+    "x": "receiver's right",
+    "y": "up",
+    "z": "toward receiver",
+    "horizontal_angle": "atan2(vx, vz); zero along +z; positive toward +x",
+    "vertical_angle": "atan2(vy, sqrt(vx^2+vz^2)); positive upward",
+    "receiver_handedness_for_fh_bh_labels": "right-handed; swap labels for a left-handed receiver"
+  },
+  "model": {
+    "gravity_m_per_s2": 9.81,
+    "table_length_m": 2.74,
+    "table_width_m": 1.525,
+    "table_top_height_m": 0.76,
+    "net_height_above_table_m": 0.1525,
+    "ball_radius_m": 0.02,
+    "net_top_height_m": 0.9125,
+    "table_first_contact_ball_center_height_m": 0.78,
+    "drag": "omitted",
+    "Magnus": "omitted",
+    "post_bounce_physics": "not modeled"
+  },
+  "calibration_used": {
+    "status": "UNCONFIRMED - these defaults are hypotheses, not measured game mappings",
+    "position": {
+      "basis_rows": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "native_units_per_metre": 1,
+      "native_origin": [
+        0,
+        0,
+        0
+      ],
+      "formula": "native_xyz = native_origin + native_units_per_metre * basis_rows * canonical_xyz"
+    },
+    "direction": {
+      "horizontal": {
+        "native_units_per_radian": 57.29577951308232,
+        "sign": 1,
+        "native_offset": 0
+      },
+      "vertical": {
+        "native_units_per_radian": 57.29577951308232,
+        "sign": 1,
+        "native_offset": 0
+      },
+      "formula": "native_angle = native_offset + sign * native_units_per_radian * canonical_angle_radians",
+      "note": "Horizontal canonical zero is +z, positive is toward +x; vertical zero is horizontal, positive is upward. Position and angle mappings are independent settings; both must be calibrated."
+    },
+    "speed": {
+      "native_units_per_metre_per_second": 1,
+      "native_offset": 0
+    },
+    "spin": {
+      "topBottom": {
+        "native_units_per_radian_per_second": 1,
+        "sign": 1,
+        "native_offset": 0
+      },
+      "leftRight": {
+        "native_units_per_radian_per_second": 1,
+        "sign": 1,
+        "native_offset": 0
+      },
+      "screw": {
+        "native_units_per_radian_per_second": 1,
+        "sign": 1,
+        "native_offset": 0
+      },
+      "note": "Positive topBottom is hypothesized topspin; positive leftRight is merely the positive sidespin command, not a verified left/right bend. Native spin units and signs are unknown."
+    },
+    "timing": {
+      "secondsPerLaunch": {
+        "native_units_per_second": 1,
+        "native_offset": 0
+      },
+      "PostDelay": {
+        "native_units_per_second": 1,
+        "native_offset": 0
+      }
+    },
+    "notes": [
+      "Do not treat this file or its generated pack as calibrated or game-ready.",
+      "The default angular mapping guesses degrees. The default speed and spin mappings guess SI units.",
+      "Affine field transforms cannot correct drag, Magnus force, collisions, nonlinear slider mappings, or unknown launch-direction formulas.",
+      "Change measured anchors and conversion factors here and rerun generate.py. Remeasure trajectories afterward."
+    ]
+  },
+  "candidates": [
+    {
+      "id": "ce61896c-3347-50db-b271-b71780bc98b1",
+      "slug": "gentle_fh_short",
+      "name": "Gentle FH, shorter",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        0.6557392102552762,
+        1.771778767228009,
+        4.281591314019744
+      ],
+      "intended_landing_center_xyz_m": [
+        0.34,
+        0.78,
+        0.62
+      ],
+      "computed_landing_center_xyz_m": [
+        0.34,
+        0.78,
+        0.6200000000000001
+      ],
+      "time_of_flight_s": 0.5184988097137575,
+      "net_crossing_time_s": 0.3736928358297351,
+      "net_crossing_center_xyz_m": [
+        0.24504504504504507,
+        1.1571357561132944,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.1571357561132944,
+      "net_ball_bottom_clearance_m": 0.22463575611329445,
+      "net_conservative_sphere_sweep_clearance_m": 0.2156808612919171,
+      "landing_edge_margins_m": {
+        "side": 0.4024999999999999,
+        "end": 0.7300000000000001,
+        "net_side": 0.6
+      },
+      "apex_height_m": 1.34,
+      "speed_m_per_s": 4.679873726090859,
+      "canonical_angles_radians": {
+        "horizontal": 0.15197228042830374,
+        "vertical": 0.3882782841068001
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "neutral",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          0.6557392106702159,
+          1.7717787690178617,
+          4.281591317488307
+        ],
+        "landing_center_xyz_m": [
+          0.3400000003987374,
+          0.7799999999999998,
+          0.620000002997191
+        ],
+        "time_of_flight_s": 0.518498809993734,
+        "net_crossing_time_s": 0.3736928355270025,
+        "net_crossing_center_height_m": 1.15713575735557,
+        "net_conservative_sphere_sweep_clearance_m": 0.21568086256376703,
+        "landing_error_from_intended_m": 3.0235981364898563e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "a710c416-8534-5bc9-b2fb-179caa8aed12",
+      "slug": "gentle_bh_short",
+      "name": "Gentle BH, shorter",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        -0.6557392102552762,
+        1.771778767228009,
+        4.281591314019744
+      ],
+      "intended_landing_center_xyz_m": [
+        -0.34,
+        0.78,
+        0.62
+      ],
+      "computed_landing_center_xyz_m": [
+        -0.34,
+        0.78,
+        0.6200000000000001
+      ],
+      "time_of_flight_s": 0.5184988097137575,
+      "net_crossing_time_s": 0.3736928358297351,
+      "net_crossing_center_xyz_m": [
+        -0.24504504504504507,
+        1.1571357561132944,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.1571357561132944,
+      "net_ball_bottom_clearance_m": 0.22463575611329445,
+      "net_conservative_sphere_sweep_clearance_m": 0.2156808612919171,
+      "landing_edge_margins_m": {
+        "side": 0.4024999999999999,
+        "end": 0.7300000000000001,
+        "net_side": 0.6
+      },
+      "apex_height_m": 1.34,
+      "speed_m_per_s": 4.679873726090859,
+      "canonical_angles_radians": {
+        "horizontal": -0.15197228042830374,
+        "vertical": 0.3882782841068001
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "neutral",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          -0.6557392106702159,
+          1.7717787690178617,
+          4.281591317488307
+        ],
+        "landing_center_xyz_m": [
+          -0.3400000003987374,
+          0.7799999999999998,
+          0.620000002997191
+        ],
+        "time_of_flight_s": 0.518498809993734,
+        "net_crossing_time_s": 0.3736928355270025,
+        "net_crossing_center_height_m": 1.15713575735557,
+        "net_conservative_sphere_sweep_clearance_m": 0.21568086256376703,
+        "landing_error_from_intended_m": 3.0235981364898563e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "6da7fc0e-45c6-58ea-9cbe-feff2235668b",
+      "slug": "gentle_fh_deep",
+      "name": "Gentle FH, deeper",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        0.9643223680224647,
+        1.771778767228009,
+        5.168767892600411
+      ],
+      "intended_landing_center_xyz_m": [
+        0.5,
+        0.78,
+        1.08
+      ],
+      "computed_landing_center_xyz_m": [
+        0.5,
+        0.78,
+        1.08
+      ],
+      "time_of_flight_s": 0.5184988097137575,
+      "net_crossing_time_s": 0.3095515281873179,
+      "net_crossing_center_xyz_m": [
+        0.29850746268656714,
+        1.2584491861070477,
+        -2.220446049250313e-16
+      ],
+      "net_crossing_center_height_m": 1.2584491861070477,
+      "net_ball_bottom_clearance_m": 0.3259491861070477,
+      "net_conservative_sphere_sweep_clearance_m": 0.3209812667535802,
+      "landing_edge_margins_m": {
+        "side": 0.24249999999999997,
+        "end": 0.27,
+        "net_side": 1.06
+      },
+      "apex_height_m": 1.34,
+      "speed_m_per_s": 5.548448355805914,
+      "canonical_angles_radians": {
+        "horizontal": 0.18444664334475702,
+        "vertical": 0.32502100797317723
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "neutral",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          0.9643223688404904,
+          1.7717787685718036,
+          5.168767896489331
+        ],
+        "landing_center_xyz_m": [
+          0.5000000006268479,
+          0.78,
+          1.0800000031028856
+        ],
+        "time_of_flight_s": 0.5184988099239596,
+        "net_crossing_time_s": 0.30955152795441504,
+        "net_crossing_center_height_m": 1.2584491868176253,
+        "net_conservative_sphere_sweep_clearance_m": 0.3209812674819911,
+        "landing_error_from_intended_m": 3.1655705251826345e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "f62e41be-e584-5dfa-bcb9-d0c67022f653",
+      "slug": "gentle_bh_deep",
+      "name": "Gentle BH, deeper",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        -0.9643223680224647,
+        1.771778767228009,
+        5.168767892600411
+      ],
+      "intended_landing_center_xyz_m": [
+        -0.5,
+        0.78,
+        1.08
+      ],
+      "computed_landing_center_xyz_m": [
+        -0.5,
+        0.78,
+        1.08
+      ],
+      "time_of_flight_s": 0.5184988097137575,
+      "net_crossing_time_s": 0.3095515281873179,
+      "net_crossing_center_xyz_m": [
+        -0.29850746268656714,
+        1.2584491861070477,
+        -2.220446049250313e-16
+      ],
+      "net_crossing_center_height_m": 1.2584491861070477,
+      "net_ball_bottom_clearance_m": 0.3259491861070477,
+      "net_conservative_sphere_sweep_clearance_m": 0.3209812667535802,
+      "landing_edge_margins_m": {
+        "side": 0.24249999999999997,
+        "end": 0.27,
+        "net_side": 1.06
+      },
+      "apex_height_m": 1.34,
+      "speed_m_per_s": 5.548448355805914,
+      "canonical_angles_radians": {
+        "horizontal": -0.18444664334475702,
+        "vertical": 0.32502100797317723
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "neutral",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          -0.9643223688404904,
+          1.7717787685718036,
+          5.168767896489331
+        ],
+        "landing_center_xyz_m": [
+          -0.5000000006268479,
+          0.78,
+          1.0800000031028856
+        ],
+        "time_of_flight_s": 0.5184988099239596,
+        "net_crossing_time_s": 0.30955152795441504,
+        "net_crossing_center_height_m": 1.2584491868176253,
+        "net_conservative_sphere_sweep_clearance_m": 0.3209812674819911,
+        "landing_error_from_intended_m": 3.1655705251826345e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "89b8e1c1-a176-5a30-ae58-0b6cf002883a",
+      "slug": "top_fh",
+      "name": "Topspin hypothesis, FH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        0.9116240778309692,
+        1.084988479201508,
+        5.949546613212641
+      ],
+      "intended_landing_center_xyz_m": [
+        0.38,
+        0.78,
+        0.88
+      ],
+      "computed_landing_center_xyz_m": [
+        0.38,
+        0.78,
+        0.8799999999999999
+      ],
+      "time_of_flight_s": 0.4168384855566074,
+      "net_crossing_time_s": 0.2689280551978112,
+      "net_crossing_center_xyz_m": [
+        0.24516129032258063,
+        1.1170429656541927,
+        -2.220446049250313e-16
+      ],
+      "net_crossing_center_height_m": 1.1170429656541927,
+      "net_ball_bottom_clearance_m": 0.1845429656541927,
+      "net_conservative_sphere_sweep_clearance_m": 0.17926631351338107,
+      "landing_edge_margins_m": {
+        "side": 0.36249999999999993,
+        "end": 0.4700000000000001,
+        "net_side": 0.86
+      },
+      "apex_height_m": 1.24,
+      "speed_m_per_s": 6.115992426587134,
+      "canonical_angles_radians": {
+        "horizontal": 0.15204326786340847,
+        "vertical": 0.1783458129007285
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.18,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 55.0439318392842,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          0.9116240781458758,
+          1.0849884794874365,
+          5.949546616620593
+        ],
+        "landing_center_xyz_m": [
+          0.3800000001674322,
+          0.78,
+          0.8800000016566027
+        ],
+        "time_of_flight_s": 0.41683848559628056,
+        "net_crossing_time_s": 0.26892805504376693,
+        "net_crossing_center_height_m": 1.1170429659703478,
+        "net_conservative_sphere_sweep_clearance_m": 0.17926631383863154,
+        "landing_error_from_intended_m": 1.6650423975516558e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "7f85a70e-fb6d-5f96-9843-49d3e3d4b0ad",
+      "slug": "top_bh",
+      "name": "Topspin hypothesis, BH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        -0.9116240778309692,
+        1.084988479201508,
+        5.949546613212641
+      ],
+      "intended_landing_center_xyz_m": [
+        -0.38,
+        0.78,
+        0.88
+      ],
+      "computed_landing_center_xyz_m": [
+        -0.38,
+        0.78,
+        0.8799999999999999
+      ],
+      "time_of_flight_s": 0.4168384855566074,
+      "net_crossing_time_s": 0.2689280551978112,
+      "net_crossing_center_xyz_m": [
+        -0.24516129032258063,
+        1.1170429656541927,
+        -2.220446049250313e-16
+      ],
+      "net_crossing_center_height_m": 1.1170429656541927,
+      "net_ball_bottom_clearance_m": 0.1845429656541927,
+      "net_conservative_sphere_sweep_clearance_m": 0.17926631351338107,
+      "landing_edge_margins_m": {
+        "side": 0.36249999999999993,
+        "end": 0.4700000000000001,
+        "net_side": 0.86
+      },
+      "apex_height_m": 1.24,
+      "speed_m_per_s": 6.115992426587134,
+      "canonical_angles_radians": {
+        "horizontal": -0.15204326786340847,
+        "vertical": 0.1783458129007285
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.18,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 55.0439318392842,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          -0.9116240781458758,
+          1.0849884794874365,
+          5.949546616620593
+        ],
+        "landing_center_xyz_m": [
+          -0.3800000001674322,
+          0.78,
+          0.8800000016566027
+        ],
+        "time_of_flight_s": 0.41683848559628056,
+        "net_crossing_time_s": 0.26892805504376693,
+        "net_crossing_center_height_m": 1.1170429659703478,
+        "net_conservative_sphere_sweep_clearance_m": 0.17926631383863154,
+        "landing_error_from_intended_m": 1.6650423975516558e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "4066554d-1250-5936-9b42-b55f83d8e817",
+      "slug": "back_fh",
+      "name": "Backspin hypothesis, FH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        0.6888098248310277,
+        1.9809088823063012,
+        4.495390435739339
+      ],
+      "intended_landing_center_xyz_m": [
+        0.38,
+        0.78,
+        0.88
+      ],
+      "computed_landing_center_xyz_m": [
+        0.38,
+        0.7799999999999998,
+        0.8799999999999999
+      ],
+      "time_of_flight_s": 0.5516762193297954,
+      "net_crossing_time_s": 0.3559201415030938,
+      "net_crossing_center_xyz_m": [
+        0.24516129032258063,
+        1.2636841530344027,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.2636841530344027,
+      "net_ball_bottom_clearance_m": 0.33118415303440274,
+      "net_conservative_sphere_sweep_clearance_m": 0.32436610204896976,
+      "landing_edge_margins_m": {
+        "side": 0.36249999999999993,
+        "end": 0.4700000000000001,
+        "net_side": 0.86
+      },
+      "apex_height_m": 1.38,
+      "speed_m_per_s": 4.960543734765421,
+      "canonical_angles_radians": {
+        "horizontal": 0.15204326786340844,
+        "vertical": 0.410789220504764
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": -0.14,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": -34.723806143357955,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          0.6888098240392855,
+          1.9809088800547026,
+          4.495390431594314
+        ],
+        "landing_center_xyz_m": [
+          0.3799999993138416,
+          0.78,
+          0.8799999960858012
+        ],
+        "time_of_flight_s": 0.5516762189677608,
+        "net_crossing_time_s": 0.35592014183127396,
+        "net_crossing_center_height_m": 1.2636841517372424,
+        "net_conservative_sphere_sweep_clearance_m": 0.3243661007210924,
+        "landing_error_from_intended_m": 3.973885507758696e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "9acf4608-759a-5134-aa29-0b6c8aec7c84",
+      "slug": "back_bh",
+      "name": "Backspin hypothesis, BH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        -0.6888098248310277,
+        1.9809088823063012,
+        4.495390435739339
+      ],
+      "intended_landing_center_xyz_m": [
+        -0.38,
+        0.78,
+        0.88
+      ],
+      "computed_landing_center_xyz_m": [
+        -0.38,
+        0.7799999999999998,
+        0.8799999999999999
+      ],
+      "time_of_flight_s": 0.5516762193297954,
+      "net_crossing_time_s": 0.3559201415030938,
+      "net_crossing_center_xyz_m": [
+        -0.24516129032258063,
+        1.2636841530344027,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.2636841530344027,
+      "net_ball_bottom_clearance_m": 0.33118415303440274,
+      "net_conservative_sphere_sweep_clearance_m": 0.32436610204896976,
+      "landing_edge_margins_m": {
+        "side": 0.36249999999999993,
+        "end": 0.4700000000000001,
+        "net_side": 0.86
+      },
+      "apex_height_m": 1.38,
+      "speed_m_per_s": 4.960543734765421,
+      "canonical_angles_radians": {
+        "horizontal": -0.15204326786340844,
+        "vertical": 0.410789220504764
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": -0.14,
+        "leftRight": 0.0,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": -34.723806143357955,
+        "leftRight": 0.0,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          -0.6888098240392855,
+          1.9809088800547026,
+          4.495390431594314
+        ],
+        "landing_center_xyz_m": [
+          -0.3799999993138416,
+          0.78,
+          0.8799999960858012
+        ],
+        "time_of_flight_s": 0.5516762189677608,
+        "net_crossing_time_s": 0.35592014183127396,
+        "net_crossing_center_height_m": 1.2636841517372424,
+        "net_conservative_sphere_sweep_clearance_m": 0.3243661007210924,
+        "landing_error_from_intended_m": 3.973885507758696e-09,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "965fba40-457b-512b-b09c-8f78404e255e",
+      "slug": "side_positive_fh",
+      "name": "Positive side hypothesis, FH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        0.7988090797862731,
+        1.6573472780319767,
+        4.892705613690923
+      ],
+      "intended_landing_center_xyz_m": [
+        0.4,
+        0.78,
+        0.85
+      ],
+      "computed_landing_center_xyz_m": [
+        0.4,
+        0.7800000000000002,
+        0.8500000000000001
+      ],
+      "time_of_flight_s": 0.5007454348253312,
+      "net_crossing_time_s": 0.3270174268247061,
+      "net_crossing_center_xyz_m": [
+        0.2612244897959184,
+        1.1974387927391577,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.1974387927391577,
+      "net_ball_bottom_clearance_m": 0.26493879273915766,
+      "net_conservative_sphere_sweep_clearance_m": 0.25851803474094404,
+      "landing_edge_margins_m": {
+        "side": 0.3424999999999999,
+        "end": 0.5000000000000001,
+        "net_side": 0.83
+      },
+      "apex_height_m": 1.32,
+      "speed_m_per_s": 5.227185109424735,
+      "canonical_angles_radians": {
+        "horizontal": 0.16183743123842292,
+        "vertical": 0.3226311552849627
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": 0.12,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": 31.363110656548404,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          0.7988090801004821,
+          1.657347278451601,
+          4.8927056141120735
+        ],
+        "landing_center_xyz_m": [
+          0.400000000208906,
+          0.78,
+          0.8500000005267392
+        ],
+        "time_of_flight_s": 0.5007454348898864,
+        "net_crossing_time_s": 0.3270174267965573,
+        "net_crossing_center_height_m": 1.1974387929200323,
+        "net_conservative_sphere_sweep_clearance_m": 0.2585180349252224,
+        "landing_error_from_intended_m": 5.666532549839952e-10,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "5f6868f3-2850-501a-9466-964f00d12dd3",
+      "slug": "side_negative_fh",
+      "name": "Negative side hypothesis, FH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        0.7988090797862731,
+        1.6573472780319767,
+        4.892705613690923
+      ],
+      "intended_landing_center_xyz_m": [
+        0.4,
+        0.78,
+        0.85
+      ],
+      "computed_landing_center_xyz_m": [
+        0.4,
+        0.7800000000000002,
+        0.8500000000000001
+      ],
+      "time_of_flight_s": 0.5007454348253312,
+      "net_crossing_time_s": 0.3270174268247061,
+      "net_crossing_center_xyz_m": [
+        0.2612244897959184,
+        1.1974387927391577,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.1974387927391577,
+      "net_ball_bottom_clearance_m": 0.26493879273915766,
+      "net_conservative_sphere_sweep_clearance_m": 0.25851803474094404,
+      "landing_edge_margins_m": {
+        "side": 0.3424999999999999,
+        "end": 0.5000000000000001,
+        "net_side": 0.83
+      },
+      "apex_height_m": 1.32,
+      "speed_m_per_s": 5.227185109424735,
+      "canonical_angles_radians": {
+        "horizontal": 0.16183743123842292,
+        "vertical": 0.3226311552849627
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": -0.12,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": -31.363110656548404,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          0.7988090801004821,
+          1.657347278451601,
+          4.8927056141120735
+        ],
+        "landing_center_xyz_m": [
+          0.400000000208906,
+          0.78,
+          0.8500000005267392
+        ],
+        "time_of_flight_s": 0.5007454348898864,
+        "net_crossing_time_s": 0.3270174267965573,
+        "net_crossing_center_height_m": 1.1974387929200323,
+        "net_conservative_sphere_sweep_clearance_m": 0.2585180349252224,
+        "landing_error_from_intended_m": 5.666532549839952e-10,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "d539d9d8-2445-5136-a14a-f7ab70a8b166",
+      "slug": "side_positive_bh",
+      "name": "Positive side hypothesis, BH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        -0.7988090797862731,
+        1.6573472780319767,
+        4.892705613690923
+      ],
+      "intended_landing_center_xyz_m": [
+        -0.4,
+        0.78,
+        0.85
+      ],
+      "computed_landing_center_xyz_m": [
+        -0.4,
+        0.7800000000000002,
+        0.8500000000000001
+      ],
+      "time_of_flight_s": 0.5007454348253312,
+      "net_crossing_time_s": 0.3270174268247061,
+      "net_crossing_center_xyz_m": [
+        -0.2612244897959184,
+        1.1974387927391577,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.1974387927391577,
+      "net_ball_bottom_clearance_m": 0.26493879273915766,
+      "net_conservative_sphere_sweep_clearance_m": 0.25851803474094404,
+      "landing_edge_margins_m": {
+        "side": 0.3424999999999999,
+        "end": 0.5000000000000001,
+        "net_side": 0.83
+      },
+      "apex_height_m": 1.32,
+      "speed_m_per_s": 5.227185109424735,
+      "canonical_angles_radians": {
+        "horizontal": -0.16183743123842292,
+        "vertical": 0.3226311552849627
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": 0.12,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": 31.363110656548404,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          -0.7988090801004821,
+          1.657347278451601,
+          4.8927056141120735
+        ],
+        "landing_center_xyz_m": [
+          -0.400000000208906,
+          0.78,
+          0.8500000005267392
+        ],
+        "time_of_flight_s": 0.5007454348898864,
+        "net_crossing_time_s": 0.3270174267965573,
+        "net_crossing_center_height_m": 1.1974387929200323,
+        "net_conservative_sphere_sweep_clearance_m": 0.2585180349252224,
+        "landing_error_from_intended_m": 5.666532549839952e-10,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    },
+    {
+      "id": "0c9b9e81-f76a-5ce2-9fb5-92441508b0b7",
+      "slug": "side_negative_bh",
+      "name": "Negative side hypothesis, BH",
+      "canonical_launch_xyz_m": [
+        0.0,
+        1.18,
+        -1.6
+      ],
+      "initial_velocity_xyz_m_per_s": [
+        -0.7988090797862731,
+        1.6573472780319767,
+        4.892705613690923
+      ],
+      "intended_landing_center_xyz_m": [
+        -0.4,
+        0.78,
+        0.85
+      ],
+      "computed_landing_center_xyz_m": [
+        -0.4,
+        0.7800000000000002,
+        0.8500000000000001
+      ],
+      "time_of_flight_s": 0.5007454348253312,
+      "net_crossing_time_s": 0.3270174268247061,
+      "net_crossing_center_xyz_m": [
+        -0.2612244897959184,
+        1.1974387927391577,
+        0.0
+      ],
+      "net_crossing_center_height_m": 1.1974387927391577,
+      "net_ball_bottom_clearance_m": 0.26493879273915766,
+      "net_conservative_sphere_sweep_clearance_m": 0.25851803474094404,
+      "landing_edge_margins_m": {
+        "side": 0.3424999999999999,
+        "end": 0.5000000000000001,
+        "net_side": 0.83
+      },
+      "apex_height_m": 1.32,
+      "speed_m_per_s": 5.227185109424735,
+      "canonical_angles_radians": {
+        "horizontal": -0.16183743123842292,
+        "vertical": 0.3226311552849627
+      },
+      "spin_surface_speed_ratios": {
+        "topBottom": 0.0,
+        "leftRight": -0.12,
+        "screw": 0
+      },
+      "hypothesized_spin_rad_per_s": {
+        "topBottom": 0.0,
+        "leftRight": -31.363110656548404,
+        "screw": 0.0
+      },
+      "spin_class": "spinning_hypothesis",
+      "serialized_roundtrip": {
+        "launch_xyz_m": [
+          0.0,
+          1.18,
+          -1.6
+        ],
+        "velocity_xyz_m_per_s": [
+          -0.7988090801004821,
+          1.657347278451601,
+          4.8927056141120735
+        ],
+        "landing_center_xyz_m": [
+          -0.400000000208906,
+          0.78,
+          0.8500000005267392
+        ],
+        "time_of_flight_s": 0.5007454348898864,
+        "net_crossing_time_s": 0.3270174267965573,
+        "net_crossing_center_height_m": 1.1974387929200323,
+        "net_conservative_sphere_sweep_clearance_m": 0.2585180349252224,
+        "landing_error_from_intended_m": 5.666532549839952e-10,
+        "checked_from": "Serialized native numeric strings, inverse declared calibration"
+      },
+      "trajectory_validity": "Ideal gravity-only reference; drag, Magnus force and game physics are absent."
+    }
+  ]
+}

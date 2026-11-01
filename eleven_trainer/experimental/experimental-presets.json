@@ -1,0 +1,638 @@
+{
+  "settingsVersion": "1",
+  "showBallMachineLauncherAlways": "True",
+  "ballCount": "2",
+  "timeScale": "1",
+  "shuffle": "False",
+  "shots": {
+    "LastModified": "1/1/0001 12:00:00 AM",
+    "Dirty": "False",
+    "Deleted": "False",
+    "data": {
+      "ce61896c-3347-50db-b271-b71780bc98b1": {
+        "DataName": "EXPERIMENT - Gentle FH, shorter",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.34m, z=0.62m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "8.70737027",
+            "verticalAngle": "22.24670696"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "4.67987373",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "a710c416-8534-5bc9-b2fb-179caa8aed12": {
+        "DataName": "EXPERIMENT - Gentle BH, shorter",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.34m, z=0.62m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-8.70737027",
+            "verticalAngle": "22.24670696"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "4.67987373",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "6da7fc0e-45c6-58ea-9cbe-feff2235668b": {
+        "DataName": "EXPERIMENT - Gentle FH, deeper",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.5m, z=1.08m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "10.56801421",
+            "verticalAngle": "18.62233201"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.54844836",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "f62e41be-e584-5dfa-bcb9-d0c67022f653": {
+        "DataName": "EXPERIMENT - Gentle BH, deeper",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.5m, z=1.08m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-10.56801421",
+            "verticalAngle": "18.62233201"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.54844836",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "89b8e1c1-a176-5a30-ae58-0b6cf002883a": {
+        "DataName": "EXPERIMENT - Topspin hypothesis, FH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.38m, z=0.88m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "8.71143755",
+            "verticalAngle": "10.21846237"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "55.04393184",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "6.11599243",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "7f85a70e-fb6d-5f96-9843-49d3e3d4b0ad": {
+        "DataName": "EXPERIMENT - Topspin hypothesis, BH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.38m, z=0.88m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-8.71143755",
+            "verticalAngle": "10.21846237"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "55.04393184",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "6.11599243",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "4066554d-1250-5936-9b42-b55f83d8e817": {
+        "DataName": "EXPERIMENT - Backspin hypothesis, FH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.38m, z=0.88m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "8.71143755",
+            "verticalAngle": "23.5364886"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "-34.72380614",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "4.96054373",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "9acf4608-759a-5134-aa29-0b6c8aec7c84": {
+        "DataName": "EXPERIMENT - Backspin hypothesis, BH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.38m, z=0.88m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-8.71143755",
+            "verticalAngle": "23.5364886"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "-34.72380614",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "4.96054373",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "965fba40-457b-512b-b09c-8f78404e255e": {
+        "DataName": "EXPERIMENT - Positive side hypothesis, FH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.4m, z=0.85m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "9.27260178",
+            "verticalAngle": "18.48540354"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "31.36311066",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.22718511",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "5f6868f3-2850-501a-9466-964f00d12dd3": {
+        "DataName": "EXPERIMENT - Negative side hypothesis, FH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.4m, z=0.85m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "9.27260178",
+            "verticalAngle": "18.48540354"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "-31.36311066",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.22718511",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "d539d9d8-2445-5136-a14a-f7ab70a8b166": {
+        "DataName": "EXPERIMENT - Positive side hypothesis, BH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.4m, z=0.85m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-9.27260178",
+            "verticalAngle": "18.48540354"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "31.36311066",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.22718511",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      },
+      "0c9b9e81-f76a-5ce2-9fb5-92441508b0b7": {
+        "DataName": "EXPERIMENT - Negative side hypothesis, BH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.4m, z=0.85m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-9.27260178",
+            "verticalAngle": "18.48540354"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "-31.36311066",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.22718511",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "settingsVersion": "1",
+  "showBallMachineLauncherAlways": "True",
+  "ballCount": "2",
+  "timeScale": "1",
+  "shuffle": "False",
+  "shots": {
+    "LastModified": "1/1/0001 12:00:00 AM",
+    "Dirty": "False",
+    "Deleted": "False",
+    "data": {
+      "4066554d-1250-5936-9b42-b55f83d8e817": {
+        "DataName": "I07 EXPERIMENT - Backspin hypothesis, FH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=0.38m, z=0.88m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "8.71143755",
+            "verticalAngle": "23.5364886"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "-34.72380614",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "4.96054373",
+            "secondsPerLaunch": "2.4",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      }
+    }
+  }
+}

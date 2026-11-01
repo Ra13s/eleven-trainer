@@ -8,6 +8,7 @@ Choose the section that matches what you need now. This separation follows [Diá
 
 ## How-to guides — complete a task
 
+- [Try the complete independent pack](how-to/try-independent-pack.md): 42 bundled presets, 10/2 order and three tempos.
 - [Create a session](how-to/create-session.md): select shots, build a 10/2 cycle, adjust pacing.
 - [Connect over Wi-Fi](how-to/wifi.md): establish and close wireless ADB access.
 - [Recover and troubleshoot](how-to/recover.md): fix setup errors or restore a backup.
@@ -19,6 +20,7 @@ Choose the section that matches what you need now. This separation follows [Diá
 
 ## Explanation — understand the design
 
+- [Independent model](explanation/independent-model.md): derivation, calibration assumptions and reproduction.
 - [Rationale](explanation/rationale.md): why repeated phases, local files, preserved physics and explicit installs.
 - [Sources and licensing](explanation/sources.md): why community packs are imported separately.
 

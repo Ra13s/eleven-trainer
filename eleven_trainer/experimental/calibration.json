@@ -1,0 +1,32 @@
+{
+  "status": "UNCONFIRMED - these defaults are hypotheses, not measured game mappings",
+  "position": {
+    "basis_rows": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "native_units_per_metre": 1,
+    "native_origin": [0, 0, 0],
+    "formula": "native_xyz = native_origin + native_units_per_metre * basis_rows * canonical_xyz"
+  },
+  "direction": {
+    "horizontal": {"native_units_per_radian": 57.29577951308232, "sign": 1, "native_offset": 0},
+    "vertical": {"native_units_per_radian": 57.29577951308232, "sign": 1, "native_offset": 0},
+    "formula": "native_angle = native_offset + sign * native_units_per_radian * canonical_angle_radians",
+    "note": "Horizontal canonical zero is +z, positive is toward +x; vertical zero is horizontal, positive is upward. Position and angle mappings are independent settings; both must be calibrated."
+  },
+  "speed": {"native_units_per_metre_per_second": 1, "native_offset": 0},
+  "spin": {
+    "topBottom": {"native_units_per_radian_per_second": 1, "sign": 1, "native_offset": 0},
+    "leftRight": {"native_units_per_radian_per_second": 1, "sign": 1, "native_offset": 0},
+    "screw": {"native_units_per_radian_per_second": 1, "sign": 1, "native_offset": 0},
+    "note": "Positive topBottom is hypothesized topspin; positive leftRight is merely the positive sidespin command, not a verified left/right bend. Native spin units and signs are unknown."
+  },
+  "timing": {
+    "secondsPerLaunch": {"native_units_per_second": 1, "native_offset": 0},
+    "PostDelay": {"native_units_per_second": 1, "native_offset": 0}
+  },
+  "notes": [
+    "Do not treat this file or its generated pack as calibrated or game-ready.",
+    "The default angular mapping guesses degrees. The default speed and spin mappings guess SI units.",
+    "Affine field transforms cannot correct drag, Magnus force, collisions, nonlinear slider mappings, or unknown launch-direction formulas.",
+    "Change measured anchors and conversion factors here and rerun generate.py. Remeasure trajectories afterward."
+  ]
+}

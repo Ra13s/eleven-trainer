@@ -1,0 +1,66 @@
+{
+  "settingsVersion": "1",
+  "showBallMachineLauncherAlways": "True",
+  "ballCount": "2",
+  "timeScale": "1",
+  "shuffle": "False",
+  "shots": {
+    "LastModified": "1/1/0001 12:00:00 AM",
+    "Dirty": "False",
+    "Deleted": "False",
+    "data": {
+      "f62e41be-e584-5dfa-bcb9-d0c67022f653": {
+        "DataName": "I04 EXPERIMENT - Gentle BH, deeper",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.5m, z=1.08m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-10.56801421",
+            "verticalAngle": "18.62233201"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "5.54844836",
+            "secondsPerLaunch": "1.8",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      }
+    }
+  }
+}

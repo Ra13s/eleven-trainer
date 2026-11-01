@@ -1,0 +1,468 @@
+{
+  "status": "experimental_uncalibrated",
+  "note": "Independent ballistic derivation; native mapping and spin effects need in-game testing.",
+  "entries": [
+    {
+      "id": "I01",
+      "name": "Gentle FH, shorter",
+      "variants": {
+        "slow": {
+          "file": "I01.json",
+          "sha256": "d83227ed48373d8b8edf6bccf8bf0297a81090b2d90aac4b4db592b49c94249c",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I01-normal.json",
+          "sha256": "aa7b93bdf4891c8c7fad6c33bd95d138aae444d9a3f25effb998391084ee8659",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I01-fast.json",
+          "sha256": "baabe8c57e83ffb4ba0714417108dc7f841d4db053345ff646bf410d21e8cc6a",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I02",
+      "name": "Gentle BH, shorter",
+      "variants": {
+        "slow": {
+          "file": "I02.json",
+          "sha256": "ace9a0fc841be6f900ac4d3a85364c5123f1f950e04e05f56242f10f3ea00584",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I02-normal.json",
+          "sha256": "f5cba0a1cc821c81a9a84ed19d5e537795c27a37b702256cb17d27133b8e3fe4",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I02-fast.json",
+          "sha256": "602ab2ebf0c28573639be309548d833eae328ccae888b0265c025e751ff72152",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I03",
+      "name": "Gentle FH, deeper",
+      "variants": {
+        "slow": {
+          "file": "I03.json",
+          "sha256": "fcbc7df2d6840435506e7d66a697fa69d539ff961d07a902c66f570811ac1389",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I03-normal.json",
+          "sha256": "c7d72a93682911156a276cedc52cc9abed274b063a5bb967e21fe1c19c3a4c6b",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I03-fast.json",
+          "sha256": "d9cf1d9e77247997015b98ee47fcd8df6668c2abd6a54d9fd177efc141a4f19f",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I04",
+      "name": "Gentle BH, deeper",
+      "variants": {
+        "slow": {
+          "file": "I04.json",
+          "sha256": "6491a91f4df7d6db9d3017b8b9bdb12508b2c65e5b6c9b87e26c4fdc2fb80fd0",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I04-normal.json",
+          "sha256": "30cdcedde4500159373e08c4a23d3a9e0db40a628153045e464ba8cbb77f98c3",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I04-fast.json",
+          "sha256": "c41c6486e5b5c0d0f975b5e584af68fca19b4dc89799a9ea6cb3bce5c0a6be24",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I05",
+      "name": "Topspin hypothesis, FH",
+      "variants": {
+        "slow": {
+          "file": "I05.json",
+          "sha256": "8301537516e603fa908d219e7f8d8d2e2f41cabf20b1bb570ad92e31264f5342",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I05-normal.json",
+          "sha256": "9e6a65faa2f415733252dba35c3f01d331de8d2e5d47b0e12a0e69352cc75558",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I05-fast.json",
+          "sha256": "6ea5e344e8b15f8609770e8277b5aba7b0aed534fd6197a9d138fcf3ed1f0e84",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I06",
+      "name": "Topspin hypothesis, BH",
+      "variants": {
+        "slow": {
+          "file": "I06.json",
+          "sha256": "6fdabc17a32e8b0d0d93b96129d30455e649c6dcccfd7199f12055c2b249e2ea",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I06-normal.json",
+          "sha256": "b10579a733baad7b832c7fcb377dce80209612182d6200dc07b9735c59c8b57f",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I06-fast.json",
+          "sha256": "1291955b63bfb8eb06883a490ee0da5b5b5f0619318e8a89fb971834cf74a7a6",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I07",
+      "name": "Backspin hypothesis, FH",
+      "variants": {
+        "slow": {
+          "file": "I07.json",
+          "sha256": "0807e3da767fa11d69197985413bb8502b2f4dcfe02ef41f71cd15b737b74d5c",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I07-normal.json",
+          "sha256": "1650bddb9ee71453e1ff5e38a3df557a0be10c2b1974d53c58a42a1be5f6e056",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I07-fast.json",
+          "sha256": "14f4cdeee75e3d59d765306f65be057b7b96e000fd445e418c6ffc7b50fa4bca",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I08",
+      "name": "Backspin hypothesis, BH",
+      "variants": {
+        "slow": {
+          "file": "I08.json",
+          "sha256": "3cf01acb62c462d2cc171cfe2f82b9887dc31ce19c5aaafeac9d18299420e553",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I08-normal.json",
+          "sha256": "13b851203a7c32fee36612d2429624c596f0c107fa5bd7a8df29bdedf3ad7f0b",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I08-fast.json",
+          "sha256": "877bfbc1c383835b5fd8b4a1bde98a212818ca36263e1eae62088933b76f7593",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I09",
+      "name": "Positive side hypothesis, FH",
+      "variants": {
+        "slow": {
+          "file": "I09.json",
+          "sha256": "5dd1d7932f4f5b7f37630707bce43289b277d12d2862e28fc8598d3f315f32c4",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I09-normal.json",
+          "sha256": "49a5c35b9542da99d327cc91ea431674d2b1e0e2c3c1103e72ce949156dbe64e",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I09-fast.json",
+          "sha256": "218b0c89ce88beb53825a1d619cc5fb4be43f6f1661ace2d727b3b5759f171cb",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I10",
+      "name": "Negative side hypothesis, FH",
+      "variants": {
+        "slow": {
+          "file": "I10.json",
+          "sha256": "e74d3709160e125e0a1b247cca5f4ca51cf629d68ee91056bfec410164d1760d",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I10-normal.json",
+          "sha256": "325aceec67d2b21701624adb16ede0af0fb356d53b607eca3a5dd13453fe59c8",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I10-fast.json",
+          "sha256": "35926479a5863ac281d0cacadd0cd35fc379659e4c28d6b8f571df5f11c7422d",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I11",
+      "name": "Positive side hypothesis, BH",
+      "variants": {
+        "slow": {
+          "file": "I11.json",
+          "sha256": "1f92d54c25dcf84864ad2c82f8d69c3a6ce0aab3a6251b9aada73c939e1d1a48",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I11-normal.json",
+          "sha256": "7503d5758e715d1793a9e50f04d7695deda3b5760045a1527ff284956213d8ae",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I11-fast.json",
+          "sha256": "57baac8fc3fedd27b8860f09825d3de9fc5a148542c88d590f901f986de31b48",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "I12",
+      "name": "Negative side hypothesis, BH",
+      "variants": {
+        "slow": {
+          "file": "I12.json",
+          "sha256": "0afeb8c6af8c91c3d9f5caa274f1fc7a89ae1db063a0ba984144afbfb109fa50",
+          "interval_seconds": 3.0,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 3.0
+        },
+        "normal": {
+          "file": "I12-normal.json",
+          "sha256": "37934402abe537a8bf550c6adee8ae80188e7176b40e3aa0b71d5067653fe7c6",
+          "interval_seconds": 2.4,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 2.4
+        },
+        "fast": {
+          "file": "I12-fast.json",
+          "sha256": "c289120e3bb3469c0777a4395a3ca9f7f6de54e8806a5c103d007e1700cf8208",
+          "interval_seconds": 1.8,
+          "rows": 1,
+          "active_rows": 1,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 1.8
+        }
+      }
+    },
+    {
+      "id": "N01",
+      "name": "Neutral feeds: four placements, 10/2 cycle",
+      "variants": {
+        "slow": {
+          "file": "N01.json",
+          "sha256": "883d552f6887cc3878cc1f191effeb6fdc51d682e1ec169f19aa8bad7f556499",
+          "interval_seconds": 3.0,
+          "rows": 48,
+          "active_rows": 48,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 144.0
+        },
+        "normal": {
+          "file": "N01-normal.json",
+          "sha256": "7b355af105dd640ac47ddb1a43d4210427d033e48ddb2857127be7447c160261",
+          "interval_seconds": 2.4,
+          "rows": 48,
+          "active_rows": 48,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 115.2
+        },
+        "fast": {
+          "file": "N01-fast.json",
+          "sha256": "164c7d5468c20ed425c617d7c9fa64d659acfdddbb86e991014f09303c7d8422",
+          "interval_seconds": 1.8,
+          "rows": 48,
+          "active_rows": 48,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 86.4
+        }
+      }
+    },
+    {
+      "id": "R01",
+      "name": "All twelve experimental feeds, 10/2 cycle",
+      "variants": {
+        "slow": {
+          "file": "R01.json",
+          "sha256": "6847146feabff5cc19a12b6c8c3e8469482f80737ce9c1eb6ddf6475b939d8ab",
+          "interval_seconds": 3.0,
+          "rows": 144,
+          "active_rows": 144,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 432.0
+        },
+        "normal": {
+          "file": "R01-normal.json",
+          "sha256": "85c66413961184741c7009194280b6eef3e85580cc975fde8c3e9a5069ec86cb",
+          "interval_seconds": 2.4,
+          "rows": 144,
+          "active_rows": 144,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 345.6
+        },
+        "fast": {
+          "file": "R01-fast.json",
+          "sha256": "fe48118726356443e03c1437c7e517e80077134755b25131261050da426dfbb5",
+          "interval_seconds": 1.8,
+          "rows": 144,
+          "active_rows": 144,
+          "shuffle": "False",
+          "nominal_interval_sum_seconds": 259.2
+        }
+      }
+    }
+  ]
+}

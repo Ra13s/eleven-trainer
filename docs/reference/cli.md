@@ -9,6 +9,7 @@ Invocation: `python -m eleven_trainer COMMAND ...` or the installed `eleven-trai
 | `list SOURCE` | Settings JSON path | Every row's ID, active flag and display name, in stored order |
 | `validate SOURCE` | Settings JSON path | Schema preflight and summary; no ADB |
 | `build SOURCE OUTPUT` | Options below | A new settings file; no ADB |
+| `trial [ID]` | Options below | Bundled independent preset; selection menu if ID is omitted |
 | `devices` | Transport options below | Raw `adb devices -l` listing |
 | `pull OUTPUT --device SERIAL` | Transport options | Reads and validates the headset file, saves a new local copy; does not stop the game |
 | `install SOURCE --device SERIAL` | Transport and install options | Validates, backs up, stops/restarts Eleven, transfers and verifies |
@@ -25,9 +26,23 @@ Command-specific help: `python -m eleven_trainer build --help`. Options belong *
 
 All generated rows are active and `shuffle` is the string `False`. There is no inferred grouping by exercise title. Source files are not modified. Output creation fails if the file exists. Parent output directories are created as needed. Maximum generated rows: 5,000, a local resource guard rather than a confirmed game limit.
 
+## Trial options
+
+`trial [ID]` accepts `I01`–`I12` for single feeds, `N01` for the four neutral feeds in 10/2 order, or `R01` for all twelve in 10/2 order. With no ID, the menu defaults to R01. All rows are active; both cycles disable shuffle.
+
+| Option | Default | Meaning |
+|---|---|---|
+| `--pace slow/normal/fast` | `slow`; prompted in the menu | 3.0 / 2.4 / 1.8 seconds between launches; unchanged flight parameters |
+| `--preview` | Off | Validate bundled checksum and schema; print details; no ADB |
+| `--output PATH` | None | Export without ADB; refuses overwrite; takes precedence over preview |
+| `--device SERIAL` | None | Required for an actual installation |
+| `--backup-dir PATH` | `.local/backups` | Same transaction and backup format as `install` |
+
+`--adb` and `--adb-port` work as on other device commands. Catalog and JSON files are included as Python package resources, so the command works outside the repository after installation.
+
 ## Transport options
 
-Available only on `devices`, `pull` and `install`:
+Available on `devices`, `pull`, `install` and `trial`:
 
 | Option | Default | Meaning |
 |---|---|---|

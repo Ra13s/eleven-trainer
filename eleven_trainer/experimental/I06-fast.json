@@ -1,0 +1,66 @@
+{
+  "settingsVersion": "1",
+  "showBallMachineLauncherAlways": "True",
+  "ballCount": "2",
+  "timeScale": "1",
+  "shuffle": "False",
+  "shots": {
+    "LastModified": "1/1/0001 12:00:00 AM",
+    "Dirty": "False",
+    "Deleted": "False",
+    "data": {
+      "7f85a70e-fb6d-5f96-9843-49d3e3d4b0ad": {
+        "DataName": "I06 EXPERIMENT - Topspin hypothesis, BH",
+        "Description": "UNCALIBRATED independent SI ballistic hypothesis. Target center x=-0.38m, z=0.88m. Native units/signs unconfirmed; spin effects not simulated. Single receiver-side machine feed, not a legal two-bounce serve.",
+        "isActive": "True",
+        "CanUpdate": "True",
+        "position": {
+          "raw": {
+            "x": "0",
+            "y": "1.18",
+            "z": "-1.6"
+          },
+          "spread": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          }
+        },
+        "direction": {
+          "raw": {
+            "horizontalAngle": "-8.71143755",
+            "verticalAngle": "10.21846237"
+          },
+          "spread": {
+            "horizontalAngle": "0",
+            "verticalAngle": "0"
+          }
+        },
+        "spin": {
+          "raw": {
+            "topBottom": "55.04393184",
+            "leftRight": "0",
+            "screw": "0"
+          },
+          "spread": {
+            "topBottom": "0",
+            "leftRight": "0",
+            "screw": "0"
+          }
+        },
+        "speedAndRate": {
+          "raw": {
+            "speed": "6.11599243",
+            "secondsPerLaunch": "1.8",
+            "PostDelay": "0"
+          },
+          "spread": {
+            "speed": "0",
+            "secondsPerLaunch": "0",
+            "PostDelay": "0"
+          }
+        }
+      }
+    }
+  }
+}
